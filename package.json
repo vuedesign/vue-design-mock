@@ -1,8 +1,8 @@
 {
   "name": "vd-mock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue design mock",
-  "main": "index.js",
+  "main": "./bin/cli.js",
   "bin": {
     "mock": "./bin/cli.js"
   },
