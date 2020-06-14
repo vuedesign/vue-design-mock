@@ -5,9 +5,9 @@ vue design mock
 ### 安装
 
 ```bash
-npm install vd-mock
+npm install vue-design-mock
 # or
-sudo npm install vd-mock -g
+sudo npm install vue-design-mock -g
 ```
 ### 启动
 

@@ -1,6 +1,6 @@
 {
-  "name": "vd-mock",
-  "version": "1.0.1",
+  "name": "vue-design-mock",
+  "version": "1.0.2",
   "description": "vue design mock",
   "main": "./bin/cli.js",
   "bin": {
@@ -20,9 +20,9 @@
   "author": "n.see",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vuedesign/vd-mock/issues"
+    "url": "https://github.com/vuedesign/vue-design-mock/issues"
   },
-  "homepage": "https://github.com/vuedesign/vd-mock#readme",
+  "homepage": "https://github.com/vuedesign/vue-design-mock#readme",
   "dependencies": {
     "commander": "^5.1.0",
     "koa": "^2.12.0",
