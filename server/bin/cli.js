@@ -4,7 +4,7 @@ const path = require('path');
 const program = require('commander');
 const nodemon = require('nodemon');
 
-process.env.CLI_PATH = path.join(__dirname, '..');
+process.env.ROOT_PATH = path.join(__dirname, '../../');
 process.env.APP_PATH = process.cwd();
 process.env.APP_MOCK_PATH = path.join(process.cwd(), 'mock');
 
@@ -14,7 +14,7 @@ program
 .description('run mock start command')
 .action((cmd) => {
     nodemon({
-        script: `${process.env.CLI_PATH}/lib/index.js`
+        script: `${process.env.ROOT_PATH}/server/lib/index.js`
     }).on('start', function () {
         console.log('nodemon started');
     }).on('crash', function () {
@@ -23,9 +23,10 @@ program
 });
 end(program);
 
+const version = require(`${process.env.ROOT_PATH}/package`).version;
 function start(program) {
     program
-    .version(require('../package').version);
+    .version(version);
     // .usage('<command> [options]');
 };
 

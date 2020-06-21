@@ -5,7 +5,6 @@ const MockJs = require('mockjs');
 
 class Mock {
     constructor(options = {}) {
-        console.log('options.MOCK_DATA_PATH', options.MOCK_DATA_PATH);
         this.options = options;
         this.data = require(`${options.MOCK_DATA_PATH}/index`);
         this.config = require(`${options.MOCK_DATA_PATH}/mock.config`);
